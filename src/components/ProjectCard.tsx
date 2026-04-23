@@ -2,7 +2,7 @@ import { useNavigate } from "react-router-dom" //  importing useNavigate hook fr
 import type { Project } from "../types"
 import { useState } from "react"; // importing useState hook from react to manage the state of the action menu in the project card
 import { EllipsisIcon, ImageIcon, Loader2Icon, PlaySquareIcon, Share2Icon, Trash2Icon } from "lucide-react"; // importing icons from lucide-react to use in the project card for various actions like downloading, sharing, and deleting the generated content
-import { GhostButton } from "./Buttons";
+import { GhostButton } from "./Buttons"; // importing GhostButton component from the Buttons file to use as the "View Details" button in the project card
 
 
 function ProjectCard({gen, setGenerations, forCommunity = false} : {gen: Project, setGenerations: React.Dispatch<React.SetStateAction<Project[]>>, forCommunity?:boolean}){
