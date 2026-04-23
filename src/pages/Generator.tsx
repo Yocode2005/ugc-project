@@ -2,7 +2,7 @@ import { useState } from "react";
 import Title from "../components/Title"
 import UploadZone from "../components/UploadZone"
 import { Loader2Icon, RectangleHorizontalIcon, RectangleVerticalIcon, Wand2Icon } from "lucide-react";
-import { PrimaryButton } from "../components/Buttons";
+import { PrimaryButton } from "../components/Buttons"; // importing PrimaryButton component from the Buttons file to use as the "Generate Image" button in the generator page
 
 
 function Generator() {
