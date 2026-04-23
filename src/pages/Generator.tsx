@@ -1,6 +1,6 @@
 import { useState } from "react";
 import Title from "../components/Title"
-import UploadZone from "../components/UploadZone"
+import UploadZone from "../components/UploadZone" // importing UploadZone component from the UploadZone file to use as the file upload area for product and model images in the generator page
 import { Loader2Icon, RectangleHorizontalIcon, RectangleVerticalIcon, Wand2Icon } from "lucide-react";
 import { PrimaryButton } from "../components/Buttons"; // importing PrimaryButton component from the Buttons file to use as the "Generate Image" button in the generator page
 
