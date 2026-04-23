@@ -129,7 +129,7 @@ function ProjectCard({gen, setGenerations, forCommunity = false} : {gen: Project
                     {/* buttons*/}
                     {!forCommunity && (
                        <div className="mt-4 grid grid-cols-2 gap-3">
-                        <GhostButton className="text-xs justify-center">
+                        <GhostButton className="text-xs justify-center" onClick={() => {navigate(`/result/${gen.id}`); scrollTo(0,0)}}>
                             View Details
                         </GhostButton>
                        </div>
