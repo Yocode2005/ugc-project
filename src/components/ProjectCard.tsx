@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom" //  importing useNavigate hook from react-router-dom to navigate to the result page when the user clicks on the "View Details" button
 import type { Project } from "../types"
-import { useState } from "react";
+import { useState } from "react"; // importing useState hook from react to manage the state of the action menu in the project card
 import { EllipsisIcon, ImageIcon, Loader2Icon, PlaySquareIcon, Share2Icon, Trash2Icon } from "lucide-react";
 import { GhostButton } from "./Buttons";
 
