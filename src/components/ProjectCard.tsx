@@ -2,6 +2,7 @@ import { useNavigate } from "react-router-dom"
 import type { Project } from "../types"
 import { useState } from "react";
 import { EllipsisIcon, ImageIcon, Loader2Icon, PlaySquareIcon, Share2Icon, Trash2Icon } from "lucide-react";
+import { GhostButton } from "./Buttons";
 
 
 function ProjectCard({gen, setGenerations, forCommunity = false} : {gen: Project, setGenerations: React.Dispatch<React.SetStateAction<Project[]>>, forCommunity?:boolean}){
@@ -123,6 +124,15 @@ function ProjectCard({gen, setGenerations, forCommunity = false} : {gen: Project
                             <p className="text-xs text-gray-400 mb-1">Description</p>
                             <div className="text-xs text-gray-300">{gen.userPrompt}</div>
                         </div>
+                    )}
+
+                    {/* buttons*/}
+                    {!forCommunity && (
+                       <div className="mt-4 grid grid-cols-2 gap-3">
+                        <GhostButton className="text-xs justify-center">
+                            View Details
+                        </GhostButton>
+                       </div>
                     )}
         </div>
         </div>
