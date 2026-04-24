@@ -28,7 +28,7 @@ function Result() {
   ) : (
     <div className="min-h-screen text-white p-6 md:p-12 mt-20">
       <div className="max-w-6xl mx-auto">
-        <header>
+        <header className="flex justify-between items-center mb-8">
           <h1>Generation Result</h1>
           <Link to="/generate" className="btn-secondary text-sm flex items-center gap-2">
           <RefreshCcwIcon className="w-4 h-4"/>
