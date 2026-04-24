@@ -1,5 +1,5 @@
 import { useState } from "react"
-import { Project } from "../types"
+import type { Project } from "../types"
 
 function Result() {
   const [project, setProjectData] = useState<Project>({} as Project)
