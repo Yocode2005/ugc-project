@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react"
 import type { Project } from "../types"
 import { dummyGenerations } from "../assets/assets"
+import { Loader2Icon } from "lucide-react"
 
 function Result() {
   const [project, setProjectData] = useState<Project>({} as Project)
@@ -20,7 +21,9 @@ function Result() {
   },[])
 
   return loading ? (
-    <div>Loading...</div>
+    <div className="h-screen w-full flex items-center justify-center ">
+      <Loader2Icon className="animate-spin text-indigo- size-9" />
+    </div>
   ) : (
     <div>Result</div>
   )
