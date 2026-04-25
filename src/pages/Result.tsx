@@ -83,9 +83,15 @@ function Result() {
             <h3 className="text-xl font-semibold mb-2">Video Magic</h3>
             <p className="text-gray-400 text-sm mb-6">Turn this static image into a dynamic video for social media</p>
             {!project.generatedVideo ? (
-              <PrimaryButton onClick={handleGenerateVideo}>
-                <SparkleIcon className="size-4"/>
-                Generate Video</PrimaryButton>
+              <PrimaryButton onClick={handleGenerateVideo} disabled={isGenerating} className="w-full">
+                {isGenerating ? (
+                  <>Generating Video...</>
+                ) : (
+                  <>
+                  <SparkleIcon className="size-4"/>
+                Generate Video </>
+                )}
+                </PrimaryButton>
             ) : (
               <div className="p-3 bg-green-500/10 border border-green-500/20 rounded-xl text-green-400 text-center text-sm font-medium">Video Generated Successfully</div>
             )}
