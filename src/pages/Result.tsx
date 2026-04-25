@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react"
 import type { Project } from "../types"
 import { dummyGenerations } from "../assets/assets"
-import { Loader2Icon, RefreshCcwIcon } from "lucide-react"
+import { ImageIcon, ImagesIcon, Loader2Icon, RefreshCcwIcon } from "lucide-react"
 import { Link } from "react-router-dom"
 import { GhostButton } from "../components/Buttons"
 
@@ -56,8 +56,11 @@ function Result() {
           <div className="glass-panel p-6 rounded-2xl">
             <h3>Actions</h3>
             <div>
-              <a href="" download>
-                <GhostButton></GhostButton>
+              <a href={project.generatedImage} download>
+                <GhostButton disabled={!project.generatedImage} className="w-full justify-center rounded-md py-3 disabled:opacity-50 disabled:cursor_not-allowed">
+                  <ImageIcon className="size-4.5"/>
+                  Download Image
+                </GhostButton>
               </a>
             </div>
           </div>
