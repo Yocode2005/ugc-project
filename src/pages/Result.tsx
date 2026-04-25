@@ -3,6 +3,7 @@ import type { Project } from "../types"
 import { dummyGenerations } from "../assets/assets"
 import { Loader2Icon, RefreshCcwIcon } from "lucide-react"
 import { Link } from "react-router-dom"
+import { GhostButton } from "../components/Buttons"
 
 function Result() {
   const [project, setProjectData] = useState<Project>({} as Project)
@@ -50,7 +51,20 @@ function Result() {
           </div>
         </div>
         {/* sidebar actions */}
-        <div className="space-y-6"></div>
+        <div className="space-y-6">
+          {/* download buttons */}
+          <div className="glass-panel p-6 rounded-2xl">
+            <h3>Actions</h3>
+            <div>
+              <a href="" download>
+                <GhostButton></GhostButton>
+              </a>
+            </div>
+          </div>
+          {/* generate video buttons */}
+          <div>
+          </div>
+        </div>
         </div>
       </div>
     </div>
