@@ -71,7 +71,12 @@ function Result() {
             </div>
           </div>
           {/* generate video buttons */}
-          <div>
+          <div className="glass-panel p-6 rounded-2xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 p-4 opacity-10">
+              <VideoIcon className="size-24"/>
+            </div>
+            <h3>Video Magic</h3>
+            <p>Turn this static image into a dynamic video for social media</p>
           </div>
         </div>
         </div>
