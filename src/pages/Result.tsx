@@ -50,7 +50,7 @@ function Result() {
           </div>
         </div>
         {/* sidebar actions */}
-        <div></div>
+        <div className="space-y-6"></div>
         </div>
       </div>
     </div>
