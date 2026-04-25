@@ -19,6 +19,10 @@ function Result() {
     },3000)
   }
 
+  const handleGenerateVideo = async () => {
+    setIsGenerating(true)
+  }
+
   useEffect(() => {
     fetchProjectData();
   },[])
@@ -79,7 +83,7 @@ function Result() {
             <h3 className="text-xl font-semibold mb-2">Video Magic</h3>
             <p className="text-gray-400 text-sm mb-6">Turn this static image into a dynamic video for social media</p>
             {!project.generatedVideo ? (
-              <PrimaryButton>
+              <PrimaryButton onClick={handleGenerateVideo}>
                 <SparkleIcon className="size-4"/>
                 Generate Video</PrimaryButton>
             ) : (
