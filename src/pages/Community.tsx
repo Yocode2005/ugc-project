@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react" // import  useEffect and useState hooks from React
 import type { Project } from "../types" // import the Project type from the types file
-import { dummyGenerations } from "../assets/assets"
+import { dummyGenerations } from "../assets/assets" // import dummyGenerations from the assets file to use as mock data for projects
 import { Loader2Icon } from "lucide-react"
 import ProjectCard from "../components/ProjectCard"
 
