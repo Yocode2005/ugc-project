@@ -1,5 +1,5 @@
 import { Loader2Icon } from "lucide-react" // import the Loader2Icon from lucide-react to show a loading spinner while the app is loading
-import { useEffect } from "react"
+import { useEffect } from "react" // import the useEffect hook from React to perform side effects in the component, in this case to redirect the user after a certain time period
 
 
 function Loading() {
