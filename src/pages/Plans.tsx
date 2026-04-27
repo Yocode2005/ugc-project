@@ -6,9 +6,10 @@ function Plans() {
     <div className="max-sm:py-10 sm:pt-20">
       <Pricing />
      <p className="text-center text-gray-400 text-sm my-14 mx-auto px-12">
-        Create stunning images for just 5 credits and generate immersive videos for 10 credits
+        Create stunning images for just <span className="text-indigo-400 font-medium"> 5 credits</span> and generate immersive videos for <span className="text-indigo-400 font-medium">10 credits </span>
       </p>
     </div>
+
   )
 }
 
