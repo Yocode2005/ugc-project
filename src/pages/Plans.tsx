@@ -1,7 +1,7 @@
 import Pricing from "../components/Pricing" // import the Pricing component
 
 
-function Plans() {
+function Plans() { // function for plans with diffrent credits
   return (
     <div className="max-sm:py-10 sm:pt-20">
       <Pricing />
