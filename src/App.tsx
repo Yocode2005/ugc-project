@@ -14,7 +14,7 @@ import Loading from './pages/Loading';
 function App() {
 	return (
 		<>
-			<SoftBackdrop />
+			<SoftBackdrop /> // add the SoftBackdrop component to the app, which provides a blurred background effect for the entire application
 			<LenisScroll />
 			<Navbar />
 			<Routes>
