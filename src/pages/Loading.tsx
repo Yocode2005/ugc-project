@@ -18,4 +18,4 @@ function Loading() { // function for the loading page that shows a spinner and r
   )
 }
 
-export default Loading
+export default Loading // export the Loading component as the default export of this module
