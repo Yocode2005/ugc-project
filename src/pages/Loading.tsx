@@ -1,4 +1,4 @@
-import { Loader2Icon } from "lucide-react"
+import { Loader2Icon } from "lucide-react" // import the Loader2Icon from lucide-react to show a loading spinner while the app is loading
 import { useEffect } from "react"
 
 
