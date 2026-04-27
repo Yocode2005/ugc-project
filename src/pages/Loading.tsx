@@ -2,7 +2,7 @@ import { Loader2Icon } from "lucide-react" // import the Loader2Icon from lucide
 import { useEffect } from "react" // import the useEffect hook from React to perform side effects in the component, in this case to redirect the user after a certain time period
 
 
-function Loading() {
+function Loading() { // function for the loading page that shows a spinner and redirects to the home page after 6 seconds
   useEffect(() => {
     setTimeout(() => {
       window.location.href = "/"
