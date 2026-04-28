@@ -9,7 +9,7 @@ import Plans from './pages/Plans';  // import plans page component, which provid
 import Community from './pages/Community'; // import community page component, which provides a platform for users to connect and share their experiences with the application
 import Result from './pages/Result';  // pages components
 import MyGenerations from './pages/MyGenerations'; // import my generations page component, which allows users to view and manage their previously generated projects and results within the application
-import Loading from './pages/Loading';
+import Loading from './pages/Loading'; // import loading components
 
 function App() {
 	return (
