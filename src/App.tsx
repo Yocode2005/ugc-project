@@ -1,5 +1,5 @@
 import Navbar from './components/Navbar'; //  import navbar compnent
-import Home from './pages/Home';
+import Home from './pages/Home'; // import home page component
 import SoftBackdrop from './components/SoftBackdrop';
 import Footer from './components/Footer';
 import LenisScroll from './components/lenis';
