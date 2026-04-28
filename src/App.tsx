@@ -7,7 +7,7 @@ import { Route, Routes } from 'react-router-dom'; // import route  and routes fr
 import Generator from './pages/Generator'; // import generator page component
 import Plans from './pages/Plans';  // import plans page component, which provides information about the different subscription plans available for the application
 import Community from './pages/Community'; // import community page component, which provides a platform for users to connect and share their experiences with the application
-import Result from './pages/Result';
+import Result from './pages/Result';  // pages components
 import MyGenerations from './pages/MyGenerations';
 import Loading from './pages/Loading';
 
