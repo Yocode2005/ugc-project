@@ -1,7 +1,7 @@
 import Navbar from './components/Navbar'; //  import navbar compnent
 import Home from './pages/Home'; // import home page component
 import SoftBackdrop from './components/SoftBackdrop'; // import softbackup comp.
-import Footer from './components/Footer';
+import Footer from './components/Footer'; // import footer
 import LenisScroll from './components/lenis';
 import { Route, Routes } from 'react-router-dom';
 import Generator from './pages/Generator';
