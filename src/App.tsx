@@ -6,7 +6,7 @@ import LenisScroll from './components/lenis'; // import lenis scroll component, 
 import { Route, Routes } from 'react-router-dom'; // import route  and routes from react-router-dom
 import Generator from './pages/Generator'; // import generator page component
 import Plans from './pages/Plans';  // import plans page component, which provides information about the different subscription plans available for the application
-import Community from './pages/Community';
+import Community from './pages/Community'; // import community page component, which provides a platform for users to connect and share their experiences with the application
 import Result from './pages/Result';
 import MyGenerations from './pages/MyGenerations';
 import Loading from './pages/Loading';
