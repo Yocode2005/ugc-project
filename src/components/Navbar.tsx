@@ -1,4 +1,4 @@
-import { MenuIcon, XIcon } from "lucide-react";
+import { MenuIcon, SparkleIcon, XIcon } from "lucide-react";
 import { GhostButton, PrimaryButton } from "./Buttons";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -63,7 +63,11 @@ export default function Navbar() {
         ) : (
           <div className="flex gap-2">
             <GhostButton onClick={() => navigate("/plans")} className="border-none text-gray-300 sm:py-1.5">Credits:</GhostButton>
-            <UserButton></UserButton>
+            <UserButton>
+              <UserButton.MenuItems>
+                <UserButton.Action label="Generate" labelIcon={<SparkleIcon size={14}/>} onClick={() => navigate("/generate")} />
+              </UserButton.MenuItems>
+            </UserButton>
           </div>
         )}
 
