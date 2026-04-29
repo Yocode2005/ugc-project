@@ -1,4 +1,4 @@
-import { MenuIcon, SparkleIcon, XIcon } from "lucide-react";
+import { DollarSignIcon, FolderEditIcon, GalleryHorizontalEnd, MenuIcon, SparkleIcon, XIcon } from "lucide-react";
 import { GhostButton, PrimaryButton } from "./Buttons";
 import { useState } from "react";
 import { motion } from "framer-motion";
@@ -65,7 +65,16 @@ export default function Navbar() {
             <GhostButton onClick={() => navigate("/plans")} className="border-none text-gray-300 sm:py-1.5">Credits:</GhostButton>
             <UserButton>
               <UserButton.MenuItems>
+
                 <UserButton.Action label="Generate" labelIcon={<SparkleIcon size={14}/>} onClick={() => navigate("/generate")} />
+
+                 <UserButton.Action label="My Generations" labelIcon={<FolderEditIcon size={14}/>} onClick={() => navigate("/my-generations")} />
+
+                  <UserButton.Action label="Community" labelIcon={<GalleryHorizontalEnd size={14}/>} onClick={() => navigate("/community")} />
+
+                  
+                  <UserButton.Action label="Plans" labelIcon={<DollarSignIcon size={14}/>} onClick={() => navigate("/plans")} />
+
               </UserButton.MenuItems>
             </UserButton>
           </div>
