@@ -1,12 +1,13 @@
 import { MenuIcon, XIcon } from "lucide-react";
-import { PrimaryButton } from "./Buttons";
+import { GhostButton, PrimaryButton } from "./Buttons";
 import { useState } from "react";
 import { motion } from "framer-motion";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { assets } from "../assets/assets";
 import { useClerk, useUser } from "@clerk/clerk-react";
 
 export default function Navbar() {
+    const navigate = useNavigate();
   const { user } = useUser();
   const { openSignIn, openSignUp } = useClerk();
   const [isOpen, setIsOpen] = useState(false);
@@ -60,7 +61,9 @@ export default function Navbar() {
             </PrimaryButton>
           </div>
         ) : (
-          <div></div>
+          <div className="flex gap-2">
+            <GhostButton onClick={() => navigate("/plans")} className="border-none text-gray-300 sm:py-1.5">Credits:</GhostButton>
+          </div>
         )}
 
         <div className="hidden md:flex items-center gap-3">
