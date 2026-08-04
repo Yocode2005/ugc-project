@@ -80,20 +80,6 @@ export default function Navbar() {
           </div>
         )}
 
-        <div className="hidden md:flex items-center gap-3">
-          <button
-            onClick={() => openSignIn()}
-            className="text-sm font-medium text-gray-300 hover:text-white transition max-sm:hidden"
-          >
-            Sign in
-          </button>
-          <PrimaryButton
-            onClick={() => openSignUp()}
-            className="max-sm:text-xs hidden sm:inline-block"
-          >
-            Get Started
-          </PrimaryButton>
-        </div>
 
         <button onClick={() => setIsOpen(!isOpen)} className="md:hidden">
           <MenuIcon className="size-6" />
